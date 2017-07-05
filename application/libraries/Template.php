@@ -49,7 +49,6 @@
                 $data->body = $body;
             }
         }
-
         $this->ci->load->view('templates/'.$tpl_view, $data);
     }
     }

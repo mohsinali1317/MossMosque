@@ -1,16 +1,16 @@
 <?php 
-   class Test extends CI_Controller {
+   class Home extends CI_Controller {
   
       public function index() { 
-         $this->load->view('test');
+        $data = array(
+            'title' => 'Index',
+        );
+         $this->template->load('default', 'home', $data);
       } 
       
        public function hello() { 
-         
         $data = array(
- 
-            'title' => 'Title goes here',
-
+            'title' => 'Home',
         );
 
         $this->template->load('default', 'content', $data);
